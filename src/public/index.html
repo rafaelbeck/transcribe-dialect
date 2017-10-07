@@ -11,18 +11,30 @@
   <body>
 
     <div class="container">
-          <div class="form-group">
-            <div id="waveform"></div>
-            <button class="btn btn-default" onclick="app.toogle()">Play/Pause</button>
-            <button class="btn btn-default" onclick="app.setPlaybackRate(.5)">.5x</button>
-            <button class="btn btn-default" onclick="app.setPlaybackRate(1)">1x</button>
-            <button class="btn btn-default" onclick="app.setPlaybackRate(1.5)" on>1.5x</button>
+      <div class="form-group">
+        <div id="waveform"></div>
+      </div>
+      <div class="form-group controls">
+        <div>
+          <button class="btn btn-lg btn-secondary" id="buttonPlay" onclick="app.toogle()"><i class="icon-play"></i></button>
+          <button class="btn btn-lg btn-secondary" id="buttonPause" onclick="app.toogle()"><i class="icon-pause"></i></button>
+          <div class="btn-group" role="group">
+            <button class="btn btn-sm btn-secondary" id="buttonSlower" onclick="app.setPlaybackRate(-0.05)"><i class="icon-turtle"></i></button>
+            <button class="btn btn-sm btn-secondary" id="buttonFaster" onclick="app.setPlaybackRate(0.05)"><i class="icon-rabbit"></i></button>
           </div>
-          <div class="form-group">
-            <textarea class="form-control" id="userInput" rows="10" placeholder="Was habe ich gesagt?" autofocus></textarea>
-          </div>
-          <button class="btn btn-lg btn-primary" onclick="app.next()" type="submit">Nächster Task</button>
+          <button class="btn btn-sm btn-secondary" id="buttonMute" onclick="app.mute(false)"><i class="icon-volume-mute"></i></button>
+          <button class="btn btn-sm btn-secondary" id="buttonUnmute" onclick="app.mute(true)"><i class="icon-volume-high"></i></button>
         </div>
+        <div id="duration"></div>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="userInput" rows="1" placeholder="Was habe ich gesagt?" autocomplete="off" autocorrect="off" spellcheck="false" autofocus></textarea>
+      </div>
+      <div class="form-group">
+        <div class="btn-group float-right" role="group">
+          <button class="btn btn-lg btn-primary" onclick="app.next()">Weiter</button>
+        </div>
+      </div>
     </div>
 
     <script src="app.bundle.js"></script>
