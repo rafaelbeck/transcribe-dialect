@@ -1,6 +1,6 @@
 {
   "name": "transcribe-prototype",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "build": "rimraf dist && webpack --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
