@@ -12,10 +12,8 @@
 
     <div class="container">
           <div class="form-group">
-            <audio controls="controls" id="audio_player" controlsList="nodownload">
-              <source src="" type="audio/mp4" />
-              Your browser does not support the audio element.
-            </audio>
+            <div id="waveform"></div>
+            <button class="btn btn-default" onclick="app.toogle()">Play/Pause</button>
             <button class="btn btn-default" onclick="app.setPlaybackRate(.5)">.5x</button>
             <button class="btn btn-default" onclick="app.setPlaybackRate(1)">1x</button>
             <button class="btn btn-default" onclick="app.setPlaybackRate(1.5)" on>1.5x</button>

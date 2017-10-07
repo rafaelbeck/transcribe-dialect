@@ -11,7 +11,8 @@
     "bootstrap": "^4.0.0-beta",
     "git-release": "^0.6.0",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.5"
+    "popper.js": "^1.12.5",
+    "wavesurfer.js": "^2.0.0-beta01"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
