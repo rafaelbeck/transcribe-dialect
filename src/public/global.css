@@ -52,7 +52,7 @@ audio {
   width: 100%;
 }
 
-#userInput {
+#user-input {
   margin-top: 80px;
   font-size: 30px;
   overflow:hidden;
@@ -62,6 +62,18 @@ audio {
   border: none;
   resize: none;
   outline: none;
+}
+
+#current {
+  float: left;
+}
+
+#remaining {
+  float: right;
+}
+
+#btn-continue {
+  display: none;
 }
 
 .hidden {
